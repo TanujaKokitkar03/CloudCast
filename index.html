@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CloudCast!</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="scripts.js" defer></script>
+
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <main class="main_container">
+      <header class="input_cont">
+        <input class="input_city" placeholder="Search City" type="text" />
+        <button class="search_btn">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </header>
+
+      <section class="weather_info" style="display: none;">
+        <div class="loc_date_cont">
+          <div class="location">
+            <span class="material-symbols-outlined"> location_on </span>
+            <h4 class="country">India</h4>
+          </div>
+
+          <h5 class="current_date regular_txt">Wed, 12 Dec 2024</h5>
+        </div>
+
+        <div class="weather_summary">
+          <img src="assets/weather/clouds.svg" class="weather_summary_img" />
+
+          <div class="weather_summary_info">
+            <h1 class="temp">30°C</h1>
+            <h4 class="condition regular_txt">Clouds</h4>
+          </div>
+        </div>
+
+        <div class="weather_conditions_cont">
+          <div class="condition_item">
+            <span class="material-symbols-outlined"> water_drop </span>
+
+            <div class="condition_info">
+              <h5 class="regular_txt">Humidity</h5>
+              <h5 class="humidity_value_txt">55%</h5>
+            </div>
+          </div>
+
+          <div class="condition_item">
+            <span class="material-symbols-outlined">
+              air
+            </span>
+
+            <div class="condition_info">
+              <h5 class="regular_txt">Wind Speed</h5>
+              <h5 class="wind_value_txt">2 M/s</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="forecast_items_cont">
+          <div class="forecast_item">
+            <h5 class="forecast_item_date regular_txt">10 Dec</h5>
+            <img src="assets/weather/thunderstorm.svg" class="forecast_item_img" />
+            <h5 class="forecast_item_temp">25°C</h5>
+          </div>
+
+          <div class="forecast_item">
+            <h5 class="forecast_item_date regular_txt">10 Dec</h5>
+            <img src="assets/weather/thunderstorm.svg" class="forecast_item_img" />
+            <h5 class="forecast_item_temp">25°C</h5>
+          </div>
+
+          <div class="forecast_item">
+            <h5 class="forecast_item_date regular_txt">10 Dec</h5>
+            <img src="assets/weather/thunderstorm.svg" class="forecast_item_img" />
+            <h5 class="forecast_item_temp">25°C</h5>
+          </div>
+
+          <!-- <div class="forecast_item">
+            <h5 class="forecast_item_date regular_txt">10 Dec</h5>
+            <img src="assets/weather/thunderstorm.svg" class="forecast_item_img" />
+            <h5 class="forecast_item_temp">25°C</h5>
+          </div> -->
+
+        </div>
+      </section>
+
+      <section class="search_city section_mess">
+        <img src="assets/message/search-city.png">
+         <div>
+          <h3>Search weather conditions of any city!</h3>
+         </div>
+      </section>
+
+      <section class="not_found_city section_mess" style="display: none;">
+        <img src="assets/message/not-found.png">
+         <div>
+          <h3>City not found!</h3>
+         </div>
+      </section>
+    </main>
+  </body>
+</html>
